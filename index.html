@@ -190,6 +190,21 @@
     }
 }
 
+	   .close-navbar {
+        position: absolute;
+        top: 15px;
+        right: 20px;
+        background-color: black;
+        color: white;
+        border: none;
+        font-size: 18px;
+        padding: 5px 10px;
+        cursor: pointer;
+    }
+
+    .close-navbar:hover {
+        opacity: 0.8;
+    }
 </style>
 
 
@@ -204,7 +219,7 @@
             <span class="oi oi-menu"></span> Menu
         </button>
 
-        <div class="collapse navbar-collapse" id="ftco-nav">
+        <div class="collapse navbar-collapse position-relative" id="ftco-nav">
             <!-- Close Button (Visible on Mobile) -->
             <button class="close-navbar d-lg-none" onclick="closeNavbar()">✖</button>
 
@@ -218,7 +233,13 @@
         </div>
     </div>
 </nav>
-
+	  
+<script>
+    function closeNavbar() {
+        document.getElementById("ftco-nav").classList.remove("show");
+    }
+</script>
+	  
 <section id="home-section" class="hero">
 		<div class="home-slider owl-carousel">
 			<div class="slider-item">
@@ -392,99 +413,97 @@
 
 
 	
-    <section class="ftco-section ftco-no-pb" id="resume-section">
-		<div class="row">
-			<h1 class="big-4">Experience</h1>
-			<div class="underline"></div>
-		</div>
-		<br>
-		
-		<div class="row">
-			<div class="col-md-6">
-				<div class="resume-wrap ftco-animate">
-					<span class="date">2024 - Present</span>
-					<h2>Software Engineer</h2>
-					<span class="position">MKM Info Solutions Pvt. Ltd.</span>
-					<div class="mt-4">
-						<ul>
-							<li>Building web and desktop applications using .NET technologies.</li>
-							<li>Developing and maintaining web applications with ASP.NET Core MVC, Angular, and SQL Server.</li>
-							<li>Creating user interfaces using HTML, CSS, Bootstrap, and jQuery.</li>
-							<li>Developing WPF applications for desktop solutions, including MVVM architecture and data binding.</li>
-							<li>Implementing RESTful APIs, database management, and UI/UX enhancements.</li>
-							<li>Collaborating with teams to gather requirements, design solutions, and optimize system performance.</li>
-							<li>Managing code using Git and GitHub to ensure smooth development processes.</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		
-		
-		
-			<div class="col-md-6">
-				<div class="resume-wrap ftco-animate">
-					<span class="date">2023 - 2024</span>
-					<h2>Front-End Developer Intern</h2>
-					<span class="position">Glowsis Technologies</span>
-					<div class="mt-4">
-						<ul>
-							<li>Worked extensively with Angular, HTML, CSS, JavaScript, and Bootstrap.</li>
-							<li>Developed responsive UI components and improved web application usability.</li>
-							<li>Gained hands-on experience in front-end development through real-world projects.</li>
-							<li>Honed skills in HTML, CSS, Bootstrap, jQuery, TypeScript, and JavaScript.</li>
-							<li>Collaborated on version control using Git and GitHub.</li>
-							<li>Assisted in debugging and optimizing web applications for better performance.</li> <!-- New List Item Added -->
-						</ul>
-					</div>
-					<br>
-				</div>
-				
-			</div>
-			
-		</div>
-		
-		<br>
-		<br>
+<section class="ftco-section ftco-no-pb" id="resume-section">
+    <div class="container">
+        <div class="row text-center">
+            <h1 class="big-4">Experience</h1>
+            <div class="underline mx-auto"></div>
+        </div>
+        <br>
 
-		<div class="row">
-			<h1 class="big-4">Education</h1>
-			<div class="underline"></div>
-		</div>
-		<br>
-		
-		<div class="row">
-			<div class="col-md-6">
-				<div class="resume-wrap ftco-animate">
-					<span class="date">2020 - 2023</span>
-					<h2>B.Tech in Computer Science</h2>
-					<span class="position">
-						<a href="https://cea.ac.in/" target="_blank">College of Engineering Adoor</a>
-					</span>
-					<p class="mt-4">Kerala, India</p>
-				</div>
-			</div>
-		
-			<div class="col-md-6">
-				<div class="resume-wrap ftco-animate">
-					<span class="date">2017 - 2020</span>
-					<h2>Diploma in Computer Science</h2>
-					<span class="position">
-						<a href="https://jdtpoly.com/" target="_blank">JDT Islam Polytechnic College</a>
-					</span>
-					<p class="mt-4">Kerala, India</p>
-				</div>
-			</div>
-		</div>
-		
-		<div class="row justify-content-center mt-5">
-			<div class="col-md-6 text-center ftco-animate">
-				<p><a href="CV/MohamedJaseemKT.pdf" download class="btn btn-primary py-4 px-5">Download CV</a></p>
-			</div>
-		</div>
-		
-		
-		
-    </section>
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="resume-wrap ftco-animate">
+                    <span class="date">2024 - Present</span>
+                    <h2>Software Engineer</h2>
+                    <span class="position">MKM Info Solutions Pvt. Ltd.</span>
+                    <div class="mt-4">
+                        <ul>
+                            <li>Building web and desktop applications using .NET technologies.</li>
+                            <li>Developing and maintaining web applications with ASP.NET Core MVC, Angular, and SQL Server.</li>
+                            <li>Creating user interfaces using HTML, CSS, Bootstrap, and jQuery.</li>
+                            <li>Developing WPF applications for desktop solutions, including MVVM architecture and data binding.</li>
+                            <li>Implementing RESTful APIs, database management, and UI/UX enhancements.</li>
+                            <li>Collaborating with teams to gather requirements, design solutions, and optimize system performance.</li>
+                            <li>Managing code using Git and GitHub to ensure smooth development processes.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 mb-4">
+                <div class="resume-wrap ftco-animate">
+                    <span class="date">2023 - 2024</span>
+                    <h2>Front-End Developer Intern</h2>
+                    <span class="position">Glowsis Technologies</span>
+                    <div class="mt-4">
+                        <ul>
+                            <li>Worked extensively with Angular, HTML, CSS, JavaScript, and Bootstrap.</li>
+                            <li>Developed responsive UI components and improved web application usability.</li>
+                            <li>Gained hands-on experience in front-end development through real-world projects.</li>
+                            <li>Honed skills in HTML, CSS, Bootstrap, jQuery, TypeScript, and JavaScript.</li>
+                            <li>Collaborated on version control using Git and GitHub.</li>
+                            <li>Assisted in debugging and optimizing web applications for better performance.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br><br>
+
+        <div class="row text-center">
+            <h1 class="big-4">Education</h1>
+            <div class="underline mx-auto"></div>
+        </div>
+        <br>
+
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="resume-wrap ftco-animate">
+                    <span class="date">2020 - 2023</span>
+                    <h2>B.Tech in Computer Science</h2>
+                    <span class="position">
+                        <a href="https://cea.ac.in/" target="_blank">College of Engineering Adoor</a>
+                    </span>
+                    <p class="mt-4">Kerala, India</p>
+                </div>
+            </div>
+
+            <div class="col-md-6 mb-4">
+                <div class="resume-wrap ftco-animate">
+                    <span class="date">2017 - 2020</span>
+                    <h2>Diploma in Computer Science</h2>
+                    <span class="position">
+                        <a href="https://jdtpoly.com/" target="_blank">JDT Islam Polytechnic College</a>
+                    </span>
+                    <p class="mt-4">Kerala, India</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center mt-5">
+            <div class="col-md-6 text-center ftco-animate">
+                <p>
+                    <a href="CV/MohamedJaseemKT.pdf" download class="btn btn-primary py-3 px-4">
+                        Download CV
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
 
    
 
